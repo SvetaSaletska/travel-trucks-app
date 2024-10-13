@@ -3,7 +3,7 @@ import { Navigation } from '../../components/Navigation/Navigation';
 // import Features from './Features';
 // import Footer from './Footer';
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <div className="home-page">
       <Navigation />
@@ -13,5 +13,3 @@ const HomePage = () => {
     </div>
   );
 };
-
-export default HomePage;
