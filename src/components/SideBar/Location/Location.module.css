@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 1.5;
+  width: 360px;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  flex: 1;
+}
+
+.locationImg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #6c717b;
+  transition: fill 0.3s ease;
+}
+
+.input:focus + .locationImg,
+.input.focused + .locationImg,
+.active {
+  fill: #101828;
+}
+
+.input {
+  border: none;
+  border-radius: 15px;
+  background-color: #f7f7f7;
+  padding: 16px 48px;
+  width: 100%;
+  height: 56px;
+  outline: transparent;
+}
+
+.label {
+  color: #6c717b;
+  font-size: 16px;
+}
